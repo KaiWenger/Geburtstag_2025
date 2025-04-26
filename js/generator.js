@@ -1,0 +1,560 @@
+const SETUP_FILE = '../config/setup.json';
+const CONFIG_FILE = 'config/data.json';
+
+let setup = null;
+
+function Singleton() {
+	if (typeof Singleton.instance === 'object') {
+		return Singleton.instance;
+	}
+
+	this.theses = null;
+	this.lists = null;
+	this.answers = null;
+	this.statistics = null;
+	this.activeThesis = 0;
+	this.activeList = 0;
+
+	Singleton.instance = this;
+}
+
+function deleteme(self) {
+	const listCard = $(self).parent().parent().parent();
+	listCard.hide(400);
+	window.setTimeout(function () { listCard.remove(); }, 500);
+}
+
+function moveup(self) {
+	const listCard = $(self).parent().parent().parent();
+	listCard.hide(400);
+	window.setTimeout(function () {
+		listCard.insertBefore(listCard.prev(".listcard"));
+		listCard.show(400);
+	}, 400);
+
+}
+
+function movedown(self) {
+	const listCard = $(self).parent().parent().parent();
+	listCard.hide(400);
+	window.setTimeout(function () {
+		listCard.insertAfter(listCard.next(".listcard"));
+		listCard.show(400);
+	}, 400);
+}
+
+// needs to be exluded from readData() as it is called later in the configuration process
+function readStatisticsData() {
+	Singleton.instance.statistics = {};
+	const selectedGroup = !setup ? {} : setup.statistics.groups[$('#input_group_select').val()] || {};
+	Singleton.instance.statistics.group = selectedGroup;
+}
+
+function readData() {
+	Singleton.instance.theses = {};
+
+	$('.input_thesis').each(function (index, value) {
+		Singleton.instance.theses[index] = {};
+		Singleton.instance.theses[index].l = $(value).val();
+	});
+	$('.input_thesis_short').each(function (index, value) {
+		Singleton.instance.theses[index].s = $(value).val();
+	});
+	$('.input_explanation').each(function (index, value) {
+		Singleton.instance.theses[index].x = $(value).val();
+	});
+
+
+	Singleton.instance.lists = {};
+
+	$('.input_list').each(function (index, value) {
+		Singleton.instance.lists[index] = {};
+		Singleton.instance.lists[index].name = $(value).val();
+	});
+	$('.input_list_short').each(function (index, value) {
+		Singleton.instance.lists[index].name_x = $(value).val();
+	});
+
+	if (Singleton.instance.answers == null) {
+		Singleton.instance.answers = {};
+	}
+
+	// remove surplus list and/or thesis keys
+	for (listkey in Object.keys(Singleton.instance.answers)) {
+		if (!(listkey in Singleton.instance.lists)) {
+			delete Singleton.instance.answers[listkey];
+		} else {
+			for (thesiskey in Object.keys(Singleton.instance.answers[listkey])) {
+				if (!(thesiskey in Singleton.instance.theses)) {
+					delete Singleton.instance.answers[listkey][thesiskey];
+				}
+			}
+		}
+	}
+
+	// initialize missing list and/or thesis keys
+	for (listkey in Object.keys(Singleton.instance.lists)) {
+		if (!(listkey in Singleton.instance.answers)) {
+			Singleton.instance.answers[listkey] = {};
+		}
+		for (thesiskey in Object.keys(Singleton.instance.theses)) {
+			if (!(thesiskey in Singleton.instance.answers[listkey])) {
+				Singleton.instance.answers[listkey][thesiskey] = {};
+				Singleton.instance.answers[listkey][thesiskey].selection = "d";
+				Singleton.instance.answers[listkey][thesiskey].statement = "";
+			}
+		}
+	}
+}
+
+function generateTheses() {
+	for (key in Object.keys(Singleton.instance.theses)) {
+		generateThesis(Singleton.instance.theses[key].l, Singleton.instance.theses[key].s, Singleton.instance.theses[key].x);
+	}
+}
+
+function generateLists() {
+	for (key in Object.keys(Singleton.instance.lists)) {
+		generateList(Singleton.instance.lists[key].name, Singleton.instance.lists[key].name_x);
+	}
+}
+
+function generateEmptyThesis() {
+	generateThesis("", "", "");
+}
+
+function generateThesis(name, shortname, explanation) {
+	var thesisdiv = `<div class="card bg-light listcard">
+		<div class="card-body">
+			<div class="form-group">
+				<label>These</label>
+				<input type="text" class="form-control input_thesis" placeholder="These" value="${name}">
+			</div>
+			<div class="form-group">
+				<label>These (Kurzname)</label>
+				<input type="text" class="form-control input_thesis_short" placeholder="These (Kurzname)" value="${shortname}">
+			</div>
+			<div class="form-group">
+				<label>Erläuterung</label>
+				<input type="text" class="form-control input_explanation" placeholder="Erläuterung" value="${explanation}">
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-danger" onclick="deleteme(this)">Diese These löschen</button>
+				<button type="button" class="btn btn-default" onclick="moveup(this)"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Diese These nach <strong>oben</strong> verschieben</button>
+				<button type="button" class="btn btn-default" onclick="movedown(this)"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> Diese These nach <strong>unten</strong> verschieben</button>
+			</div>
+		</div>
+	</div>`;
+
+	$('#theses_list').append(thesisdiv);
+}
+
+function generateEmptyList() {
+	generateList("", "");
+}
+
+function generateList(name, shortname) {
+	var listdiv = `<div class="card bg-light listcard">
+		<div class="card-body">
+			<div class="form-group">
+				<label>Listenname</label>
+				<input type="text" class="form-control input_list" placeholder="Listenname" value="${name}">
+			</div>
+			<div class="form-group">
+				<label>Listenname (kurz)</label>
+				<input type="text" class="form-control input_list_short" placeholder="Listenname (kurz)" value="${shortname}">
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-danger" onclick="deleteme(this)">Diese Liste löschen</button>
+				<button type="button" class="btn btn-default" onclick="moveup(this)"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Diese Liste nach <strong>oben</strong> verschieben</button>
+				<button type="button" class="btn btn-default" onclick="movedown(this)"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> Diese Liste nach <strong>unten</strong> verschieben</button>
+			</div>
+		</div>
+	</div>`;
+
+	$('#lists_list').append(listdiv);
+}
+
+function generateGroup(index, name) {
+	var groupSelector = `<option value="${index}">${name}</option>`;
+	$('#input_group_select').append(groupSelector);
+}
+
+function initializeStatisticsInputs () {
+	if (!setup || !setup.statistics || !setup.statistics.groups) return;
+	const groups = setup.statistics.groups;
+	if (groups.length > 0) {
+		$('#input_group_select').prop('disabled', false);
+		$('#input_group_select').html('<option>Sprache wählen...</option>');
+	}
+	groups.forEach((group, index) => {
+		generateGroup(index, group.name);
+	});
+
+	/* preselect language if already configured */
+	if (!Singleton.instance.statistics.group) return;
+	const indexOfSelectedGroup = groups.findIndex(
+		group => group.name === Singleton.instance.statistics.group.name);
+	if (indexOfSelectedGroup >= 0) $('#input_group_select').val(indexOfSelectedGroup);
+}
+
+function initializeConfig() {
+	Singleton.instance.activeThesis = 0;
+	Singleton.instance.activeList = 0;
+
+	generateTheses();
+	generateLists();
+	initializeStatisticsInputs();
+}
+
+$(function () {
+	var singleton = new Singleton();
+
+	$.getJSON(SETUP_FILE, function (setupJSON) {
+		setup = setupJSON;
+	})
+	.fail(() => showConfigAlternative())
+	.then(() => {
+		$.getJSON(CONFIG_FILE, function (data) {
+			Singleton.instance = data;
+			initializeConfig();
+		});
+	});
+
+
+	$('.btn_add_list').click(function () {
+		generateEmptyList();
+	});
+
+	$('.btn_add_thesis').click(function () {
+		generateEmptyThesis();
+	});
+
+	$('#theses_input').hide();
+	$('#lists_input').hide();
+	$('#data_input').hide();
+	$('#statistics_input').hide();
+	$('#encodeddata').hide();
+
+
+	$('.btn_start_next').click(function () {
+		var setupJSONText = $('#alternativeSetupInput').val() || '';
+		var configJSONText = $('#alternativeConfigInput').val() || '';
+		if (setupJSONText) setup = JSON.parse(setupJSONText);
+		if (configJSONText) Singleton.instance = JSON.parse(configJSONText);
+		if (setupJSONText || configJSONText) {
+			initializeConfig();
+		}
+		$('#start').hide(500);
+		$('#theses_input').show(500);
+	});
+
+	$('.btn_step_1_next').click(function () {
+		$('#theses_input').hide(500);
+		$('#lists_input').show(500);
+	});
+
+	$('.btn_step_2_next').click(function () {
+		createStep3();
+		$('#lists_input').hide(500);
+		$('#data_input').show(500);
+	});
+
+	$('.btn_step_3_next').click(function () {
+		$('#statistics_input').show(500);
+		$('#data_input').hide(500);
+	});
+
+	$('.btn_step_2_prev').click(function () {
+		$('#theses_input').show(500);
+		$('#lists_input').hide(500);
+	});
+
+	$('.btn_step_3_prev').click(function () {
+		$('#lists_input').show(500);
+		$('#data_input').hide(500);
+	});
+
+	$('.btn_step_4_prev').click(function () {
+		$('#data_input').show(500);
+		$('#statistics_input').hide(500);
+	});
+
+	$('.btn_generate_prev').click(function () {
+		$('#statistics_input').show(500);
+		$('#encodeddata').hide(500);
+	});
+
+	$('.btn_generate').click(function () {
+		readStatisticsData();
+		var copy = JSON.parse(JSON.stringify(Singleton.instance))
+		delete copy.activeThesis;
+		delete copy.activeList;
+		var jsonstring = JSON.stringify(copy, null, '\t');
+		$('#output_encodeddata').val(jsonstring);
+		$('#statistics_input').hide(500);
+		$('#encodeddata').show(500);
+	});
+
+	$('.btn_copy_encodeddata').click(function () {
+		var textArea = $('#output_encodeddata');
+		textArea.focus();
+		textArea.select();
+		var encodedData = textArea.val();
+		navigator.clipboard.writeText(encodedData).then(() => {
+			$('.btn_copy_encodeddata').popover('show');
+			window.setTimeout(() => $('.btn_copy_encodeddata').popover('hide'), 5000);
+		});
+	});	
+
+});
+
+function showConfigAlternative () {
+	var alternativeConfigInput =
+	`<div class="alert alert-primary alert-dismissible fade show" role="alert">
+		<p>Dein Browser scheint das Laden von Konfigurationsdateien nicht zu erlauben. Solltest du bereits eine <code>setup.json</code>- und/oder eine <code>data.json</code>-Konfigurationsdatei angelegt haben und diese nun anpassen wollen, kopiere den Inhalt der Datei(en) in das jeweilige Textfeld und fahre mit dem untenstehenden Button fort.</p>
+		<p>Wenn du gerade zum ersten Mal eine Konfiguration erstellen willst, fahre direkt mit dem Button unten fort.</p>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="form-row">
+			<div class="col">
+				<div class="form-group">
+					<label>Inhalt der <code>setup.json</code> (optional):</label>
+					<textarea class="form-control" id="alternativeSetupInput" rows="5"></textarea>
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<div class="form-group">
+						<label>Inhalt der <code>data.json</code> (optional):</label>
+						<textarea class="form-control" id="alternativeConfigInput" rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>`;
+
+	$('.btn_start_next').parent().before(alternativeConfigInput);
+}
+
+function createStep3() {
+	readData();
+
+	makeListSelect(Singleton.instance.lists);
+	makePagination(Object.keys(Singleton.instance.theses).length);
+	makeThesesBox();
+
+
+	$('.tt').tooltip();
+	$('.explic').hide();
+
+	thesesboxes = $('.thesis');
+
+
+	setPaginationColors();
+	thesesboxes.hide();
+
+	$('.explanationbutton').click(function (event) {
+		event.preventDefault();
+		$('.explic').toggle();
+	});
+
+
+	loadList(Singleton.instance.activeList);
+	loadThesis(Singleton.instance.activeThesis + 1);
+
+	$('[id^=input-]').change(function () {
+		saveInput();
+	})
+
+	updateStatistics();
+
+	// left and right keys
+	$(window).keypress(function (e) {
+		var code = e.which || e.keyCode;
+		switch (code) {
+			case 37: //left
+				prevThesis();
+				break;
+			case 39: //right
+				nextThesis();
+				break;
+			default:
+				break;
+		}
+	});
+}
+
+function saveInput() {
+	for (key in Object.keys(Singleton.instance.answers[Singleton.instance.activeList])) {
+		Singleton.instance.answers[Singleton.instance.activeList][key].statement = $('#input-' + key).val();
+	}
+}
+
+
+function setThesis(selection) {
+	pagination = $('#navigation li');
+	Singleton.instance.answers[Singleton.instance.activeList][Singleton.instance.activeThesis].selection = selection;
+	pagination.eq(Singleton.instance.activeThesis).removeClass('pagination-yes pagination-neutral pagination-no');
+	pagination.eq(Singleton.instance.activeThesis).addClass(letter2paginationclass(selection));
+	setClasses(selection);
+	updateStatistics();
+}
+
+function updateStatistics() {
+	answeredcount = 0;
+	for (i = 0; i < Object.keys(Singleton.instance.answers[Singleton.instance.activeList]).length; i++) {
+		if (Singleton.instance.answers[Singleton.instance.activeList][i].selection != 'd') {
+			answeredcount++;
+		}
+	}
+	$('#answered_questions_count').text(answeredcount);
+	$('#overall_questions_count').text(Object.keys(Singleton.instance.answers[Singleton.instance.activeList]).length);
+}
+
+function nextThesis() {
+	loadThesis(Singleton.instance.activeThesis + 2);
+}
+
+function prevThesis() {
+	loadThesis(Singleton.instance.activeThesis);
+}
+
+function loadThesis(number) {
+	thesesboxes = $('.thesis');
+	pagination = $('#navigation li');
+	if (number > thesesboxes.length) {
+		number = 1;
+	}
+	if (number < 1) {
+		number = thesesboxes.length;
+	}
+	Singleton.instance.activeThesis = number - 1;
+	thesesboxes.slideUp();
+	pagination.removeClass('active');
+
+	setClasses(Singleton.instance.answers[Singleton.instance.activeList][Singleton.instance.activeThesis].selection);
+
+	thesesboxes.eq(number - 1).slideDown();
+	pagination.eq(number - 1).addClass('active');
+
+}
+
+function letter2paginationclass(letter) {
+	switch (letter) {
+		case 'a':
+			return 'pagination-yes';
+			break;
+		case 'b':
+			return 'pagination-neutral';
+			break;
+		case 'c':
+			return 'pagination-no';
+			break;
+		case 'd':
+			return '';
+			break;
+
+	}
+}
+
+function setClasses(code) {
+	switch (code) {
+		case 'a':
+		case 'e':
+			$('#yes').addClass('btn-success');
+			$('#neutral').removeClass('btn-warning');
+			$('#no').removeClass('btn-danger');
+			break;
+		case 'b':
+		case 'f':
+			$('#yes').removeClass('btn-success');
+			$('#neutral').addClass('btn-warning');
+			$('#no').removeClass('btn-danger');
+			break;
+		case 'c':
+		case 'g':
+			$('#yes').removeClass('btn-success');
+			$('#neutral').removeClass('btn-warning');
+			$('#no').addClass('btn-danger');
+			break;
+		case 'd':
+		case 'h':
+			$('#yes').addClass('btn-success');
+			$('#neutral').addClass('btn-warning');
+			$('#no').addClass('btn-danger');
+			break;
+	}
+}
+
+function setPaginationColors() {
+	answers = Singleton.instance.answers;
+	pagination = $('#navigation li');
+	pagination.removeClass("pagination-yes pagination-neutral pagination-no");
+	for (i = 0; i < Object.keys(answers[Singleton.instance.activeList]).length; i++) {
+		pagination.eq(i).addClass(letter2paginationclass(answers[Singleton.instance.activeList][i]));
+	}
+}
+
+function makeListSelect(lists) {
+	str = '<ul class="nav nav-tabs">';
+
+	for (var i = 0; i < (Object.keys(lists).length); i = i + 1) {
+		str += "<li class='nav-item listselector'><a class='nav-link' href='#' onclick='loadList(" + i + ")'>" + lists[i].name_x + "</a></li>";
+	}
+	str += '</ul>';
+	$('#listselect').html(str);
+}
+
+function loadList(id) {
+	$('.listselector a').removeClass('active');
+	$('.listselector:eq(' + id + ') a').addClass('active');
+	Singleton.instance.activeList = id;
+	var answers = Singleton.instance.answers;
+	for (i = 0; i < Object.keys(answers[Singleton.instance.activeList]).length; i++) {
+		$('#input-' + i).val(answers[Singleton.instance.activeList][i].statement);
+	}
+	setPaginationColors();
+	updateStatistics();
+	setClasses(answers[Singleton.instance.activeList][Singleton.instance.activeThesis].selection);
+}
+
+function makePagination(theses_count) {
+	str = '<ul id="navigation" class="pagination pagination-sm">';
+	for (var i = 1; i < (theses_count + 1); i = i + 1) {
+		str += "<li class='page-item'><a class='page-link' href='#" + i + "' onclick='loadThesis(" + i + ")'>" + i + "</a></li>";
+	}
+	str += '</ul>';
+	$('#pagination').html(str);
+}
+
+function makeThesesBox() {
+	var theses = Singleton.instance.theses;
+	var lists = Singleton.instance.lists;
+	for (q_id = 0; q_id < Object.keys(theses).length; q_id++) {
+		str = "<div id='thesis" + q_id + "' class='thesis'>";
+		str += "<h1>These " + (q_id + 1) + "</h1>";
+		str += "<div class='well well-large statement'>";
+		str += "<p style='margin-bottom: 0px;' class='lead'>";
+
+		str += theses[q_id].l;
+
+		str += "</p>";
+		if (theses[q_id].x != "") {
+			str += "<button class='btn btn-link explanationbutton'>Erklärung</button>\n";
+			str += "<div class='explic'>" + theses[q_id].x + "</div>";
+		}
+
+		str += "</div>";
+
+		str += "<div class='row'>";
+		str += "<div class='col-xs-12 col-sm-12 col-md-8 col-md-offset-2'>";
+		str += "<textarea id='input-" + q_id + "' name='comments[" + q_id + "]' class='form-control' rows='3' placeholder='Hier die Begründung eingeben...'></textarea>";
+		str += "</div>";
+		str += "</div>";
+
+		str += "</div>";
+		$('#thesesbox').append(str);
+	}
+}
