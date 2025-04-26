@@ -3,23 +3,23 @@
 		{
 			"name": "Deutsch",
 			"flag": "de.svg",
-			"url": ""
-		},
-		{
-			"name": "English",
-			"flag": "en.svg",
-			"url": ""
+			"url": "https://kaiwenger.github.io/Mahl-o-Wat-Test/"
 		}
 	],
 	"branding": {
-		"logo": "mahlowat_logo.svg",
-		"appendix": "powered by",
-		"url": "https://github.com/HSZemi/mahlowat"
+		"logo": "kai.jpg",
+		"appendix": "",
+		"url": ""
 	},
 	"statistics": {
-		"checkpoints": {},
+		"checkpoints": {
+			"enter": "",
+			"start": "",
+			"result": ""
+		},
 		"groups": [],
 		"log": "",
 		"url": ""
-	}
+	},
+	"actions": {}
 }
