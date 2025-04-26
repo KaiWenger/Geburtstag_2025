@@ -1,0 +1,163 @@
+{
+	"theses": {
+		"0": {
+			"l": "Fußball",
+			"s": "Eintracht Braunschweig > Hannover 96",
+			"x": "Eintracht Braunschweig ist der tollere Fußballverein als Hannover 96"
+		},
+		"1": {
+			"l": "Eiscreme",
+			"s": "Ich mag Zitroneneis",
+			"x": "Magst du die Eissorte"
+		},
+		"2": {
+			"l": "Ich treffe Entscheidungen aus dem Bauchgefühl",
+			"s": "Bauchgefühl",
+			"x": ""
+		},
+		"3": {
+			"l": "Ich bin eher extrovertiert (rede mehr als zuhören)",
+			"s": "Extrovertiert",
+			"x": ""
+		},
+		"4": {
+			"l": "Freitags ist mein Lieblingswochentag",
+			"s": "Lieblingswochentag",
+			"x": ""
+		},
+		"5": {
+			"l": "Ich gehe häufig in die Kirche",
+			"s": "Kirche",
+			"x": ""
+		},
+		"6": {
+			"l": "Ich bin ein guter Mensch",
+			"s": "Gut",
+			"x": ""
+		},
+		"7": {
+			"l": "Wenn es einen Gott gibt, ist er gut",
+			"s": "Gott",
+			"x": ""
+		},
+		"8": {
+			"l": "Ich mag Tanzen sehr gerne",
+			"s": "Tanzen",
+			"x": ""
+		},
+		"9": {
+			"l": "Statistiken sind toll",
+			"s": "Statistik",
+			"x": ""
+		},
+		"10": {
+			"l": "Ich stehe regelmäßig vor 6 Uhr auf",
+			"s": "",
+			"x": ""
+		}
+	},
+	"lists": {
+		"0": {
+			"name": "Kai",
+			"name_x": "Kai"
+		},
+		"1": {
+			"name": "Nathalie",
+			"name_x": "Nathalie"
+		}
+	},
+	"answers": {
+		"0": {
+			"0": {
+				"selection": "a",
+				"statement": "Eintracht Braunschweig ist einfach toller"
+			},
+			"1": {
+				"selection": "a",
+				"statement": "Zitroneneis habe ich 2020 für mich entdeckt"
+			},
+			"2": {
+				"selection": "c",
+				"statement": "Denke viel über Entscheidungen nach"
+			},
+			"3": {
+				"selection": "a",
+				"statement": "Sagen zumindest viele"
+			},
+			"4": {
+				"selection": "a",
+				"statement": "Das ganze Wochenende steht vor einem"
+			},
+			"5": {
+				"selection": "a",
+				"statement": "Jede Woche 2x"
+			},
+			"6": {
+				"selection": "c",
+				"statement": "Nope"
+			},
+			"7": {
+				"selection": "a",
+				"statement": "Yes"
+			},
+			"8": {
+				"selection": "c",
+				"statement": "Nope"
+			},
+			"9": {
+				"selection": "a",
+				"statement": "jaaa <3"
+			},
+			"10": {
+				"selection": "a",
+				"statement": "leider -.- Nathalie..."
+			}
+		},
+		"1": {
+			"0": {
+				"selection": "c",
+				"statement": "Mimimi, ich sage bestimmt Hannover 96"
+			},
+			"1": {
+				"selection": "b",
+				"statement": "kp"
+			},
+			"2": {
+				"selection": "b",
+				"statement": "eher nein"
+			},
+			"3": {
+				"selection": "c",
+				"statement": "bin super schüchtern"
+			},
+			"4": {
+				"selection": "c",
+				"statement": "Sonntag ist toll, der Tag des Herrn"
+			},
+			"5": {
+				"selection": "a",
+				"statement": "Yes, 2 x die Woche"
+			},
+			"6": {
+				"selection": "c",
+				"statement": "Nein, das weiß ich"
+			},
+			"7": {
+				"selection": "a",
+				"statement": "Yes"
+			},
+			"8": {
+				"selection": "a",
+				"statement": "jaa, hihihi"
+			},
+			"9": {
+				"selection": "c",
+				"statement": "nein, mein Ehemann mag sie"
+			},
+			"10": {
+				"selection": "a",
+				"statement": "Jaa, juhu!"
+			}
+		}
+	}
+}
