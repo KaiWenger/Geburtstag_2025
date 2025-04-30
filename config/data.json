@@ -2,13 +2,13 @@
 	"theses": {
 		"0": {
 			"l": "Fußball",
-			"s": "Eintracht Braunschweig > Hannover 96",
-			"x": "Eintracht Braunschweig ist der tollere Fußballverein als Hannover 96"
+			"s": "Ich übernehme häufig unterbewusst die Führung in Gruppen.",
+			"x": "Diese Aussage reflektiert die Tendenz, in Gruppensituationen eine natürliche Führungsrolle einzunehmen, auch ohne bewusstes Bestreben, die Kontrolle zu übernehmen."
 		},
 		"1": {
-			"l": "Eiscreme",
-			"s": "Ich mag Zitroneneis",
-			"x": "Magst du die Eissorte"
+			"l": "Sport",
+			"s": "Mehr als dreimal pro Woche treibe ich regelmäßig Sport.",
+			"x": "Diese These spricht die physische Aktivität und das Engagement für Gesundheit und Fitness an. Sie zeigt, wie regelmäßig jemand Sport in seinen Alltag integriert."
 		},
 		"2": {
 			"l": "Ich treffe Entscheidungen aus dem Bauchgefühl",
@@ -70,11 +70,11 @@
 		"0": {
 			"0": {
 				"selection": "a",
-				"statement": "Eintracht Braunschweig ist einfach toller"
+				"statement": "Häufig bin ich im Arbeitskontext oder bei Treffen mit Freunden Wortführer. Ggf. oft, weil ich Gruppen-Treffen organisiere."
 			},
 			"1": {
 				"selection": "a",
-				"statement": "Zitroneneis habe ich 2020 für mich entdeckt"
+				"statement": "Laut Statistik 2024: Fünfmal die Woche"
 			},
 			"2": {
 				"selection": "c",
