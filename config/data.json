@@ -139,6 +139,10 @@
 		"1": {
 			"name": "Nathalie",
 			"name_x": "Nathalie"
+		},
+		"2": {
+			"name": "Marven",
+			"name_x": "Marven"
 		}
 	},
 	"answers": {
@@ -152,40 +156,146 @@
 				"statement": "Laut Statistik 2024: Fünfmal die Woche"
 			},
 			"2": {
-				"selection": "c",
-				"statement": "Denke viel über Entscheidungen nach"
+				"selection": "a",
+				"statement": "Leider muss ich gestehen, dass ich eine Labertasche bin."
 			},
 			"3": {
 				"selection": "a",
-				"statement": "Sagen zumindest viele"
+				"statement": "Denke Freiheit ist ein unfassbar schützenswertes Gut - deswegen sind Leute früher aus der DDR geflohen, oder heute aus Nordkorea. Außerdem hat Jesus mich frei gemacht von Sünde und Tod - und das sogar ganz sicher; also geht auch beides"
 			},
 			"4": {
 				"selection": "a",
-				"statement": "Das ganze Wochenende steht vor einem"
+				"statement": "Definitiv, Gottes Wort."
 			},
 			"5": {
 				"selection": "a",
-				"statement": "Jede Woche 2x"
+				"statement": "Seit meiner Bekehrung hat Gott mich von Grundauf erneuert, ist am Werk und wird es vollenden."
 			},
 			"6": {
 				"selection": "c",
-				"statement": "Nope"
+				"statement": "Nein, medizinische Versorgung viel zu mies."
 			},
 			"7": {
 				"selection": "a",
-				"statement": "Yes"
+				"statement": "1-2L können nicht so schlimm sein."
 			},
 			"8": {
-				"selection": "c",
-				"statement": "Nope"
+				"selection": "a",
+				"statement": "Humor kann schwierige Situationen lösen und harte Herzen weich machen."
 			},
 			"9": {
 				"selection": "a",
-				"statement": "jaaa <3"
+				"statement": "Durch meine statistischen Aufzeichnungen der Vergangenheit, denke ich viel über sie nach."
 			},
 			"10": {
+				"selection": "b",
+				"statement": "Auf jeden Fall gesünder als vor 2 Jahren."
+			},
+			"11": {
 				"selection": "a",
-				"statement": "leider -.- Nathalie..."
+				"statement": "Auch wenn ich inzwischen Hannover als Stadt sehr lieb gewonnen habe - 96? Nene…"
+			},
+			"12": {
+				"selection": "c",
+				"statement": "Dachte ich früher auch. Aber seit ich Freunde habe, die jung Lehrer sind, sehe ich auch den Workload. Wenn man sich anstrengt."
+			},
+			"13": {
+				"selection": "b",
+				"statement": "Kann es echt nicht sagen. Das wirkt so weit weg für mich. "
+			},
+			"14": {
+				"selection": "c",
+				"statement": "Bin generell sehr neutral, fast schon egalitär. Aber am Ende weiß ich, dass Christus wiederkommt zum Beginn der Ewigkeit in seiner Herrlichkeit. Daher positiv."
+			},
+			"15": {
+				"selection": "a",
+				"statement": "Aktuell Stadt, mittelfristig Vorstadt. Land ist mir denke ich too much (oder less: Einkaufsmöglichkeiten, Freunde, usw.)"
+			},
+			"16": {
+				"selection": "a",
+				"statement": "Habe in meiner Tischtennis-Karriere so viele Psychopathen kennen gelernt. Mit sich selbst reden, sich selbst."
+			},
+			"17": {
+				"selection": "a",
+				"statement": "Möchte meiner Ehefrau gefallen."
+			},
+			"18": {
+				"selection": "c",
+				"statement": "Würde mich super stressen, weil ich dann dauernd auf den Tacho schauen müsste."
+			},
+			"19": {
+				"selection": "c",
+				"statement": "Meine Stirn wird häufig kritisiert."
+			},
+			"20": {
+				"selection": "a",
+				"statement": "Donnerstag Bibelstunde, Sonntag Gottesdienst."
+			},
+			"21": {
+				"selection": "c",
+				"statement": "Viel, viel, viel, viel lieber Strand-Urlaub und Buch; auch wenn ich Wander-Urlaub ebenfalls einiges abgewinnen kann."
+			},
+			"22": {
+				"selection": "a",
+				"statement": "So ist es."
+			},
+			"23": {
+				"selection": "a",
+				"statement": "Wurde mir so in der Uni eingebläut."
+			},
+			"24": {
+				"selection": "a",
+				"statement": "Bin echt massiv viel am Handy."
+			},
+			"25": {
+				"selection": "a",
+				"statement": "Seit ich eine TV Serie gesehen habe, wo genau das beim Speed-Dating von Verbrechern ausgefragt wurde."
+			}
+		},
+		"1": {
+			"0": {
+				"selection": "",
+				"statement": ""
+			},
+			"1": {
+				"selection": "",
+				"statement": ""
+			},
+			"2": {
+				"selection": "",
+				"statement": ""
+			},
+			"3": {
+				"selection": "",
+				"statement": ""
+			},
+			"4": {
+				"selection": "",
+				"statement": ""
+			},
+			"5": {
+				"selection": "",
+				"statement": ""
+			},
+			"6": {
+				"selection": "",
+				"statement": ""
+			},
+			"7": {
+				"selection": "",
+				"statement": ""
+			},
+			"8": {
+				"selection": "",
+				"statement": ""
+			},
+			"9": {
+				"selection": "",
+				"statement": ""
+			},
+			"10": {
+				"selection": "",
+				"statement": ""
 			},
 			"11": {
 				"selection": "",
@@ -248,109 +358,109 @@
 				"statement": ""
 			}
 		},
-		"1": {
+		"2": {
 			"0": {
-				"selection": "c",
-				"statement": "Mimimi, ich sage bestimmt Hannover 96"
+				"selection": "b",
+				"statement": ""
 			},
 			"1": {
-				"selection": "b",
-				"statement": "kp"
+				"selection": "a",
+				"statement": ""
 			},
 			"2": {
 				"selection": "b",
-				"statement": "eher nein"
+				"statement": ""
 			},
 			"3": {
-				"selection": "c",
-				"statement": "bin super schüchtern"
+				"selection": "b",
+				"statement": ""
 			},
 			"4": {
-				"selection": "c",
-				"statement": "Sonntag ist toll, der Tag des Herrn"
+				"selection": "a",
+				"statement": ""
 			},
 			"5": {
 				"selection": "a",
-				"statement": "Yes, 2 x die Woche"
+				"statement": ""
 			},
 			"6": {
-				"selection": "c",
-				"statement": "Nein, das weiß ich"
+				"selection": "b",
+				"statement": ""
 			},
 			"7": {
-				"selection": "a",
-				"statement": "Yes"
+				"selection": "c",
+				"statement": ""
 			},
 			"8": {
 				"selection": "a",
-				"statement": "jaa, hihihi"
+				"statement": ""
 			},
 			"9": {
-				"selection": "c",
-				"statement": "nein, mein Ehemann mag sie"
+				"selection": "a",
+				"statement": ""
 			},
 			"10": {
 				"selection": "a",
-				"statement": "Jaa, juhu!"
+				"statement": ""
 			},
 			"11": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"12": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"13": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"14": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"15": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"16": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"17": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"18": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"19": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"20": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"21": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"22": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"23": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"24": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"25": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			}
 		}
