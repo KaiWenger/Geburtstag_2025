@@ -51,9 +51,84 @@
 			"x": "Diese These geht auf den Fokus auf Erinnerungen und Erfahrungen ein, die oft das gegenwärtige Verhalten und die Wahrnehmung beeinflussen."
 		},
 		"10": {
-			"l": "a",
+			"l": "Ich ernähre mich im Großen und Ganzen gesund.",
 			"s": "",
-			"x": "a"
+			"x": "Diese These spricht die eigene Ernährungsweise an, ob man sich größtenteils gesund ernährt, auch wenn nicht jeder Aspekt perfekt ist."
+		},
+		"11": {
+			"l": "Eintracht Braunschweig ist der bessere Fußballverein als Hannover 96.",
+			"s": "",
+			"x": "Diese These spiegelt den regionalen Fußball-Streit wider und fordert zur Diskussion über die Werte und Rivalitäten in der Fußballwelt auf."
+		},
+		"12": {
+			"l": "Lehrer haben es einfach und arbeiten wenig.",
+			"s": "",
+			"x": "Ein gängiges Vorurteil über Lehrer, das ihre Arbeitszeit und den Aufwand, der für den Unterricht erforderlich ist, unterschätzt."
+		},
+		"13": {
+			"l": "Im Kriegsfall wäre ich bereit, für mein Land zu kämpfen.",
+			"s": "",
+			"x": "Eine tiefgründige These, die auf die Bereitschaft verweist, sich in extremen Situationen für das eigene Land einzusetzen – sei es aus patriotischen oder moralischen Gründen."
+		},
+		"14": {
+			"l": "Ich habe mehr Angst vor der Zukunft als Hoffnung auf positive Veränderungen.",
+			"s": "",
+			"x": "Diese These reflektiert die Ängste, die viele Menschen bezüglich der Zukunft und der Herausforderungen, die sie mit sich bringen könnte, empfinden."
+		},
+		"15": {
+			"l": "Ich bevorzuge es, in einer Stadt zu leben, anstatt auf dem Land.",
+			"s": "",
+			"x": "Diese These stellt die Präferenz für städtisches Leben gegenüber dem ländlichen Leben in Frage, wobei Faktoren wie soziale Aktivitäten, Verkehrsanbindung und Anonymität berücksichtigt werden."
+		},
+		"16": {
+			"l": "Alle Tischtennis-Spieler haben einen Knacks (bisschen psycho).",
+			"s": "",
+			"x": "Diese These spielt auf ein gängiges, wenn auch stereotype Vorurteil an, dass Tischtennis-Spieler oder Menschen, die einen extremen Ehrgeiz in einem Sport entwickeln, gewisse Eigenheiten oder „Macken“ haben. "
+		},
+		"17": {
+			"l": "Nicht ich selbst bestimme, welche Kleidung ich am Tag anziehe.",
+			"s": "",
+			"x": "Diese Aussage hinterfragt, wie viel Einfluss persönliche Vorlieben oder äußere Erwartungen (z.B. durch Arbeit, Partner, Gesellschaft oder Mode) auf die Wahl der Kleidung haben."
+		},
+		"18": {
+			"l": "Auf allen Autobahnen in Deutschland sollte ein generelles Tempolimit eingeführt werden.",
+			"s": "",
+			"x": "Eine These, die eine politische oder gesellschaftliche Haltung zur Verkehrssicherheit und zum Umweltschutz darstellt, indem sie das Thema Tempolimit anspricht."
+		},
+		"19": {
+			"l": "Ich würde mich als überdurchschnittlich attraktiven Menschen ansehen.",
+			"s": "",
+			"x": "Eine selbstreflektierende These zur eigenen Wahrnehmung von Aussehen und Selbstbewusstsein in Bezug auf körperliche Erscheinung."
+		},
+		"20": {
+			"l": "Ich gehe regelmäßig in die Kirche.",
+			"s": "",
+			"x": "Diese These spricht den Grad der religiösen Praxis und die Rolle des Glaubens im Leben einer Person an."
+		},
+		"21": {
+			"l": "Einen Wander-Urlaub präferiere ich mehr als einen Strand-Urlaub.",
+			"s": "",
+			"x": "Diese These spricht die Art des Urlaubs und der Freizeitgestaltung an. Sie reflektiert die Vorliebe für Aktivität und Natur (Wanderurlaub) im Vergleich zur Entspannung und Ruhe am Strand (Strandurlaub). "
+		},
+		"22": {
+			"l": "Statistiken bereichern das Leben in einer schwer nachahmlichen Art und Weise.",
+			"s": "",
+			"x": "Diese These unterstreicht die Bedeutung von Daten und Zahlen in der modernen Welt und wie sie dazu beitragen, komplexe Zusammenhänge zu verstehen und zu analysieren. Sie betont, dass Statistiken in einer einzigartigen Weise Einblicke und Erkenntnisse liefern, die mit bloßem Augenmaß oder Anekdoten nicht erreicht werden können. "
+		},
+		"23": {
+			"l": "ETF-Sparplänen sind ein wichtiger Bestandteil meiner finanziellen Vorsorge.",
+			"s": "",
+			"x": "Diese These betrifft den finanziellen Umgang mit langfristigen Investitionen und stellt die Frage, wie proaktiv man seine finanzielle Zukunft plant."
+		},
+		"24": {
+			"l": "Meine Bildschirmzeit am Handy beträgt täglich mehr als eine Stunde.",
+			"s": "",
+			"x": "Diese These beleuchtet den eigenen Umgang mit digitalen Medien und die Frage, wie oft und intensiv wir unser Smartphone nutzen."
+		},
+		"25": {
+			"l": "Wenn mich jemand nach dem Mädchennamen meiner Mutter fragt, denke ich sofort an Auskundschaften meiner Sicherheitsfragen.",
+			"s": "",
+			"x": "Diese These spiegelt das wachsende Bewusstsein und Misstrauen in Bezug auf den Schutz persönlicher Daten wider. Der Mädchennamen der Mutter ist oft eine gängige Sicherheitsfrage, die für Online-Konten verwendet wird. In einer Zeit, in der Datenschutz und Cybersicherheit zunehmend wichtiger werden, wird diese Frage schnell mit der Sorge verbunden, dass jemand unbefugt auf persönliche Informationen zugreifen könnte. "
 		}
 	},
 	"lists": {
@@ -111,6 +186,66 @@
 			"10": {
 				"selection": "a",
 				"statement": "leider -.- Nathalie..."
+			},
+			"11": {
+				"selection": "",
+				"statement": ""
+			},
+			"12": {
+				"selection": "",
+				"statement": ""
+			},
+			"13": {
+				"selection": "",
+				"statement": ""
+			},
+			"14": {
+				"selection": "",
+				"statement": ""
+			},
+			"15": {
+				"selection": "",
+				"statement": ""
+			},
+			"16": {
+				"selection": "",
+				"statement": ""
+			},
+			"17": {
+				"selection": "",
+				"statement": ""
+			},
+			"18": {
+				"selection": "",
+				"statement": ""
+			},
+			"19": {
+				"selection": "",
+				"statement": ""
+			},
+			"20": {
+				"selection": "",
+				"statement": ""
+			},
+			"21": {
+				"selection": "",
+				"statement": ""
+			},
+			"22": {
+				"selection": "",
+				"statement": ""
+			},
+			"23": {
+				"selection": "",
+				"statement": ""
+			},
+			"24": {
+				"selection": "",
+				"statement": ""
+			},
+			"25": {
+				"selection": "",
+				"statement": ""
 			}
 		},
 		"1": {
@@ -157,6 +292,66 @@
 			"10": {
 				"selection": "a",
 				"statement": "Jaa, juhu!"
+			},
+			"11": {
+				"selection": "",
+				"statement": ""
+			},
+			"12": {
+				"selection": "",
+				"statement": ""
+			},
+			"13": {
+				"selection": "",
+				"statement": ""
+			},
+			"14": {
+				"selection": "",
+				"statement": ""
+			},
+			"15": {
+				"selection": "",
+				"statement": ""
+			},
+			"16": {
+				"selection": "",
+				"statement": ""
+			},
+			"17": {
+				"selection": "",
+				"statement": ""
+			},
+			"18": {
+				"selection": "",
+				"statement": ""
+			},
+			"19": {
+				"selection": "",
+				"statement": ""
+			},
+			"20": {
+				"selection": "",
+				"statement": ""
+			},
+			"21": {
+				"selection": "",
+				"statement": ""
+			},
+			"22": {
+				"selection": "",
+				"statement": ""
+			},
+			"23": {
+				"selection": "",
+				"statement": ""
+			},
+			"24": {
+				"selection": "",
+				"statement": ""
+			},
+			"25": {
+				"selection": "",
+				"statement": ""
 			}
 		}
 	}
