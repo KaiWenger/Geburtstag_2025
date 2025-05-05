@@ -143,6 +143,10 @@
 		"2": {
 			"name": "Marven",
 			"name_x": "Marven"
+		},
+		"3": {
+			"name": "Max",
+			"name_x": "Max"
 		}
 	},
 	"answers": {
@@ -254,107 +258,107 @@
 		},
 		"1": {
 			"0": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"1": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"2": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"3": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"4": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"5": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"6": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"7": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"8": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"9": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"10": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"11": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"12": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"13": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"14": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"15": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"16": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"17": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"18": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"19": {
-				"selection": "",
+				"selection": "c",
 				"statement": ""
 			},
 			"20": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"21": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"22": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			},
 			"23": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"24": {
-				"selection": "",
+				"selection": "a",
 				"statement": ""
 			},
 			"25": {
-				"selection": "",
+				"selection": "b",
 				"statement": ""
 			}
 		},
@@ -462,6 +466,112 @@
 			"25": {
 				"selection": "c",
 				"statement": ""
+			}
+		},
+		"3": {
+			"0": {
+				"selection": "a",
+				"statement": ""
+			},
+			"1": {
+				"selection": "b",
+				"statement": ""
+			},
+			"2": {
+				"selection": "b",
+				"statement": ""
+			},
+			"3": {
+				"selection": "c",
+				"statement": ""
+			},
+			"4": {
+				"selection": "a",
+				"statement": ""
+			},
+			"5": {
+				"selection": "a",
+				"statement": ""
+			},
+			"6": {
+				"selection": "b",
+				"statement": ""
+			},
+			"7": {
+				"selection": "c",
+				"statement": ""
+			},
+			"8": {
+				"selection": "b",
+				"statement": ""
+			},
+			"9": {
+				"selection": "a",
+				"statement": ""
+			},
+			"10": {
+				"selection": "a",
+				"statement": ""
+			},
+			"11": {
+				"selection": "b",
+				"statement": "Ist mir total egal."
+			},
+			"12": {
+				"selection": "c",
+				"statement": ""
+			},
+			"13": {
+				"selection": "a",
+				"statement": "Nicht beim aktuellen Zustand der Bundeswehr. Und auch nicht aus patriotischen Gründen."
+			},
+			"14": {
+				"selection": "b",
+				"statement": ""
+			},
+			"15": {
+				"selection": "a",
+				"statement": ""
+			},
+			"16": {
+				"selection": "b",
+				"statement": ""
+			},
+			"17": {
+				"selection": "c",
+				"statement": ""
+			},
+			"18": {
+				"selection": "a",
+				"statement": ""
+			},
+			"19": {
+				"selection": "c",
+				"statement": ""
+			},
+			"20": {
+				"selection": "c",
+				"statement": ""
+			},
+			"21": {
+				"selection": "b",
+				"statement": "Kommt auf den Standurlaub an."
+			},
+			"22": {
+				"selection": "b",
+				"statement": ""
+			},
+			"23": {
+				"selection": "a",
+				"statement": ""
+			},
+			"24": {
+				"selection": "a",
+				"statement": ""
+			},
+			"25": {
+				"selection": "c",
+				"statement": "Man sollte nicht auf Seiten unterwegs sein, die 2025 noch Sicherheitsfragen zulassen."
 			}
 		}
 	}
