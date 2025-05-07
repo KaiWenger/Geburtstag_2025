@@ -147,6 +147,10 @@
 		"3": {
 			"name": "Max",
 			"name_x": "Max"
+		},
+		"4": {
+			"name": "Lena",
+			"name_x": "Lena"
 		}
 	},
 	"answers": {
@@ -572,6 +576,112 @@
 			"25": {
 				"selection": "c",
 				"statement": "Man sollte nicht auf Seiten unterwegs sein, die 2025 noch Sicherheitsfragen zulassen."
+			}
+		},
+		"4": {
+			"0": {
+				"selection": "a",
+				"statement": ""
+			},
+			"1": {
+				"selection": "c",
+				"statement": "Wo soll man denn die Zeit hernehmen?"
+			},
+			"2": {
+				"selection": "b",
+				"statement": "Mache beides gerne"
+			},
+			"3": {
+				"selection": "a",
+				"statement": "Wenn man die Freiheit hat selber über seine Sicherheit zu entscheiden."
+			},
+			"4": {
+				"selection": "a",
+				"statement": "Die Bibel lehrt uns diese."
+			},
+			"5": {
+				"selection": "a",
+				"statement": ""
+			},
+			"6": {
+				"selection": "b",
+				"statement": "Würds jetzt nicht kategorisch ausschließen, aber auch nicht bewusst anstreben."
+			},
+			"7": {
+				"selection": "c",
+				"statement": "(ist die Frage, ob ich denke, dass es gesünder ist, als man über meinen Konsum schließen könnte?) egal wie gesund es sein mag, Kaffee ist keine Option."
+			},
+			"8": {
+				"selection": "a",
+				"statement": "Passiert mir öfter als mir lieb ist."
+			},
+			"9": {
+				"selection": "a",
+				"statement": "Ich weiß doch nicht wie stark mich die Zukunft prägen wird (zu dem Zeitpunkt, wo sie mich prägt ist sie ja auch keine Zukunft mehr). Die Frage wäre eher Vergangenheit oder Gegenwart?"
+			},
+			"10": {
+				"selection": "b",
+				"statement": "Hat sicher Luft in beide Richtungen, hier würde ich ein Kreuz zwischen neutral und stimme zu setzen, wenn es das gäbe."
+			},
+			"11": {
+				"selection": "c",
+				"statement": "Fußball interessiert mich nicht, aber die Sache ist klar."
+			},
+			"12": {
+				"selection": "c",
+				"statement": "Das denkt man nur bis man selber Lehrer oder mit einem liiert ist!"
+			},
+			"13": {
+				"selection": "b",
+				"statement": ""
+			},
+			"14": {
+				"selection": "b",
+				"statement": "Realistischer Optimismus oder optimistischer Realismus ist mein Stichwort."
+			},
+			"15": {
+				"selection": "b",
+				"statement": "Hängt von meiner Lebenssituation ab."
+			},
+			"16": {
+				"selection": "b",
+				"statement": "Ich kenne solche und solche, aber generell ist meine Stichprobe sehr klein."
+			},
+			"17": {
+				"selection": "c",
+				"statement": ""
+			},
+			"18": {
+				"selection": "c",
+				"statement": "Mal ein bisschen schneller fahren macht schon Spaß."
+			},
+			"19": {
+				"selection": "b",
+				"statement": ""
+			},
+			"20": {
+				"selection": "a",
+				"statement": ""
+			},
+			"21": {
+				"selection": "b",
+				"statement": "Beides ziemlich toll und definitiv über einen Städtetrip präferiert."
+			},
+			"22": {
+				"selection": "b",
+				"statement": "Ist schon nett, aber keine unerlässliche Bereicherung."
+			},
+			"23": {
+				"selection": "c",
+				"statement": ""
+			},
+			"24": {
+				"selection": "a",
+				"statement": "Allein schon wie lange ich dafür brauche dir alle diese Thesen zu beantworten."
+			},
+			"25": {
+				"selection": "c",
+				"statement": ""
 			}
 		}
 	}
