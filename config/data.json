@@ -56,76 +56,81 @@
 			"x": "Diese These spricht die eigene Ernährungsweise an, ob man sich größtenteils gesund ernährt, auch wenn nicht jeder Aspekt perfekt ist."
 		},
 		"11": {
+			"l": "Ich wasche regelmäßig meine Hände BEVOR ich auf die Toilette gehe.",
+			"s": "",
+			"x": "Die These betont vorbeugende Hygiene: Wer sich vor dem Toilettengang die Hände wäscht, will vermeiden, Keime von außen an den eigenen Körper zu übertragen; besonders wichtig in sensiblen Bereichen oder bei erhöhter Infektionsgefahr."
+		},
+		"12": {
 			"l": "Eintracht Braunschweig ist der bessere Fußballverein als Hannover 96.",
 			"s": "",
 			"x": "Diese These spiegelt den regionalen Fußball-Streit wider und fordert zur Diskussion über die Werte und Rivalitäten in der Fußballwelt auf."
 		},
-		"12": {
+		"13": {
 			"l": "Lehrer haben es einfach und arbeiten wenig.",
 			"s": "",
 			"x": "Ein gängiges Vorurteil über Lehrer, das ihre Arbeitszeit und den Aufwand, der für den Unterricht erforderlich ist, unterschätzt."
 		},
-		"13": {
+		"14": {
 			"l": "Im Kriegsfall wäre ich bereit, für mein Land zu kämpfen.",
 			"s": "",
 			"x": "Eine tiefgründige These, die auf die Bereitschaft verweist, sich in extremen Situationen für das eigene Land einzusetzen – sei es aus patriotischen oder moralischen Gründen."
 		},
-		"14": {
+		"15": {
 			"l": "Ich habe mehr Angst vor der Zukunft als Hoffnung auf positive Veränderungen.",
 			"s": "",
 			"x": "Diese These reflektiert die Ängste, die viele Menschen bezüglich der Zukunft und der Herausforderungen, die sie mit sich bringen könnte, empfinden."
 		},
-		"15": {
+		"16": {
 			"l": "Ich bevorzuge es, in einer Stadt zu leben, anstatt auf dem Land.",
 			"s": "",
 			"x": "Diese These stellt die Präferenz für städtisches Leben gegenüber dem ländlichen Leben in Frage, wobei Faktoren wie soziale Aktivitäten, Verkehrsanbindung und Anonymität berücksichtigt werden."
 		},
-		"16": {
+		"17": {
 			"l": "Alle Tischtennis-Spieler haben einen Knacks (bisschen psycho).",
 			"s": "",
 			"x": "Diese These spielt auf ein gängiges, wenn auch stereotype Vorurteil an, dass Tischtennis-Spieler oder Menschen, die einen extremen Ehrgeiz in einem Sport entwickeln, gewisse Eigenheiten oder „Macken“ haben. "
 		},
-		"17": {
+		"18": {
 			"l": "Nicht ich selbst bestimme, welche Kleidung ich am Tag anziehe.",
 			"s": "",
 			"x": "Diese Aussage hinterfragt, wie viel Einfluss persönliche Vorlieben oder äußere Erwartungen (z.B. durch Arbeit, Partner, Gesellschaft oder Mode) auf die Wahl der Kleidung haben."
 		},
-		"18": {
+		"19": {
 			"l": "Auf allen Autobahnen in Deutschland sollte ein generelles Tempolimit eingeführt werden.",
 			"s": "",
 			"x": "Eine These, die eine politische oder gesellschaftliche Haltung zur Verkehrssicherheit und zum Umweltschutz darstellt, indem sie das Thema Tempolimit anspricht."
 		},
-		"19": {
+		"20": {
 			"l": "Ich würde mich als überdurchschnittlich attraktiven Menschen ansehen.",
 			"s": "",
 			"x": "Eine selbstreflektierende These zur eigenen Wahrnehmung von Aussehen und Selbstbewusstsein in Bezug auf körperliche Erscheinung."
 		},
-		"20": {
+		"21": {
 			"l": "Ich gehe regelmäßig in die Kirche.",
 			"s": "",
 			"x": "Diese These spricht den Grad der religiösen Praxis und die Rolle des Glaubens im Leben einer Person an."
 		},
-		"21": {
+		"22": {
 			"l": "Einen Wander-Urlaub präferiere ich mehr als einen Strand-Urlaub.",
 			"s": "",
 			"x": "Diese These spricht die Art des Urlaubs und der Freizeitgestaltung an. Sie reflektiert die Vorliebe für Aktivität und Natur (Wanderurlaub) im Vergleich zur Entspannung und Ruhe am Strand (Strandurlaub). "
 		},
-		"22": {
+		"23": {
 			"l": "Statistiken bereichern das Leben in einer schwer nachahmlichen Art und Weise.",
 			"s": "",
 			"x": "Diese These unterstreicht die Bedeutung von Daten und Zahlen in der modernen Welt und wie sie dazu beitragen, komplexe Zusammenhänge zu verstehen und zu analysieren. Sie betont, dass Statistiken in einer einzigartigen Weise Einblicke und Erkenntnisse liefern, die mit bloßem Augenmaß oder Anekdoten nicht erreicht werden können. "
 		},
-		"23": {
+		"24": {
 			"l": "ETF-Sparplänen sind ein wichtiger Bestandteil meiner finanziellen Vorsorge.",
 			"s": "",
 			"x": "Diese These betrifft den finanziellen Umgang mit langfristigen Investitionen und stellt die Frage, wie proaktiv man seine finanzielle Zukunft plant."
 		},
-		"24": {
+		"25": {
 			"l": "Meine Bildschirmzeit am Handy beträgt täglich mehr als eine Stunde.",
 			"s": "",
 			"x": "Diese These beleuchtet den eigenen Umgang mit digitalen Medien und die Frage, wie oft und intensiv wir unser Smartphone nutzen."
 		},
-		"25": {
+		"26": {
 			"l": "Wenn mich jemand nach dem Mädchennamen meiner Mutter fragt, denke ich sofort an Auskundschaften meiner Sicherheitsfragen.",
 			"s": "",
 			"x": "Diese These spiegelt das wachsende Bewusstsein und Misstrauen in Bezug auf den Schutz persönlicher Daten wider. Der Mädchennamen der Mutter ist oft eine gängige Sicherheitsfrage, die für Online-Konten verwendet wird. In einer Zeit, in der Datenschutz und Cybersicherheit zunehmend wichtiger werden, wird diese Frage schnell mit der Sorge verbunden, dass jemand unbefugt auf persönliche Informationen zugreifen könnte. "
@@ -200,62 +205,66 @@
 				"statement": "Auf jeden Fall gesünder als vor 2 Jahren."
 			},
 			"11": {
+				"selection": "b",
+				"statement": "Manchmal, nicht regelmäßig."
+			},
+			"12": {
 				"selection": "a",
 				"statement": "Auch wenn ich inzwischen Hannover als Stadt sehr lieb gewonnen habe - 96? Nene…"
 			},
-			"12": {
+			"13": {
 				"selection": "c",
 				"statement": "Dachte ich früher auch. Aber seit ich Freunde habe, die jung Lehrer sind, sehe ich auch den Workload. Wenn man sich anstrengt."
 			},
-			"13": {
+			"14": {
 				"selection": "b",
 				"statement": "Kann es echt nicht sagen. Das wirkt so weit weg für mich. "
 			},
-			"14": {
+			"15": {
 				"selection": "c",
 				"statement": "Bin generell sehr neutral, fast schon egalitär. Aber am Ende weiß ich, dass Christus wiederkommt zum Beginn der Ewigkeit in seiner Herrlichkeit. Daher positiv."
 			},
-			"15": {
+			"16": {
 				"selection": "a",
 				"statement": "Aktuell Stadt, mittelfristig Vorstadt. Land ist mir denke ich too much (oder less: Einkaufsmöglichkeiten, Freunde, usw.)"
 			},
-			"16": {
+			"17": {
 				"selection": "a",
 				"statement": "Habe in meiner Tischtennis-Karriere so viele Psychopathen kennen gelernt. Mit sich selbst reden, sich selbst."
 			},
-			"17": {
+			"18": {
 				"selection": "a",
 				"statement": "Möchte meiner Ehefrau gefallen."
 			},
-			"18": {
+			"19": {
 				"selection": "c",
 				"statement": "Würde mich super stressen, weil ich dann dauernd auf den Tacho schauen müsste."
 			},
-			"19": {
+			"20": {
 				"selection": "c",
 				"statement": "Meine Stirn wird häufig kritisiert."
 			},
-			"20": {
+			"21": {
 				"selection": "a",
 				"statement": "Donnerstag Bibelstunde, Sonntag Gottesdienst."
 			},
-			"21": {
+			"22": {
 				"selection": "c",
 				"statement": "Viel, viel, viel, viel lieber Strand-Urlaub und Buch; auch wenn ich Wander-Urlaub ebenfalls einiges abgewinnen kann."
 			},
-			"22": {
+			"23": {
 				"selection": "a",
 				"statement": "So ist es."
 			},
-			"23": {
+			"24": {
 				"selection": "a",
 				"statement": "Wurde mir so in der Uni eingebläut."
 			},
-			"24": {
+			"25": {
 				"selection": "a",
 				"statement": "Bin echt massiv viel am Handy."
 			},
-			"25": {
+			"26": {
 				"selection": "a",
 				"statement": "Seit ich eine TV Serie gesehen habe, wo genau das beim Speed-Dating von Verbrechern ausgefragt wurde."
 			}
@@ -314,7 +323,7 @@
 				"statement": ""
 			},
 			"13": {
-				"selection": "a",
+				"selection": "c",
 				"statement": ""
 			},
 			"14": {
@@ -322,7 +331,7 @@
 				"statement": ""
 			},
 			"15": {
-				"selection": "b",
+				"selection": "a",
 				"statement": ""
 			},
 			"16": {
@@ -330,7 +339,7 @@
 				"statement": ""
 			},
 			"17": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"18": {
@@ -338,11 +347,11 @@
 				"statement": ""
 			},
 			"19": {
-				"selection": "c",
+				"selection": "a",
 				"statement": ""
 			},
 			"20": {
-				"selection": "a",
+				"selection": "c",
 				"statement": ""
 			},
 			"21": {
@@ -350,11 +359,11 @@
 				"statement": ""
 			},
 			"22": {
-				"selection": "b",
+				"selection": "a",
 				"statement": ""
 			},
 			"23": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"24": {
@@ -362,6 +371,10 @@
 				"statement": ""
 			},
 			"25": {
+				"selection": "a",
+				"statement": ""
+			},
+			"26": {
 				"selection": "b",
 				"statement": ""
 			}
@@ -416,11 +429,11 @@
 				"statement": ""
 			},
 			"12": {
-				"selection": "a",
+				"selection": "c",
 				"statement": ""
 			},
 			"13": {
-				"selection": "c",
+				"selection": "a",
 				"statement": ""
 			},
 			"14": {
@@ -432,11 +445,11 @@
 				"statement": ""
 			},
 			"16": {
-				"selection": "b",
+				"selection": "c",
 				"statement": ""
 			},
 			"17": {
-				"selection": "c",
+				"selection": "b",
 				"statement": ""
 			},
 			"18": {
@@ -444,23 +457,23 @@
 				"statement": ""
 			},
 			"19": {
-				"selection": "a",
-				"statement": ""
-			},
-			"20": {
 				"selection": "c",
 				"statement": ""
 			},
-			"21": {
+			"20": {
 				"selection": "a",
+				"statement": ""
+			},
+			"21": {
+				"selection": "c",
 				"statement": ""
 			},
 			"22": {
-				"selection": "b",
+				"selection": "a",
 				"statement": ""
 			},
 			"23": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"24": {
@@ -468,6 +481,10 @@
 				"statement": ""
 			},
 			"25": {
+				"selection": "a",
+				"statement": ""
+			},
+			"26": {
 				"selection": "c",
 				"statement": ""
 			}
@@ -518,39 +535,39 @@
 				"statement": ""
 			},
 			"11": {
+				"selection": "c",
+				"statement": "Nur bei stark verschmutzten Händen."
+			},
+			"12": {
 				"selection": "b",
 				"statement": "Ist mir total egal."
 			},
-			"12": {
+			"13": {
 				"selection": "c",
 				"statement": ""
 			},
-			"13": {
+			"14": {
 				"selection": "a",
 				"statement": "Nicht beim aktuellen Zustand der Bundeswehr. Und auch nicht aus patriotischen Gründen."
 			},
-			"14": {
-				"selection": "b",
-				"statement": ""
-			},
 			"15": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"16": {
-				"selection": "b",
-				"statement": ""
-			},
-			"17": {
-				"selection": "c",
-				"statement": ""
-			},
-			"18": {
 				"selection": "a",
 				"statement": ""
 			},
-			"19": {
+			"17": {
+				"selection": "b",
+				"statement": ""
+			},
+			"18": {
 				"selection": "c",
+				"statement": ""
+			},
+			"19": {
+				"selection": "a",
 				"statement": ""
 			},
 			"20": {
@@ -558,15 +575,15 @@
 				"statement": ""
 			},
 			"21": {
-				"selection": "b",
-				"statement": "Kommt auf den Standurlaub an."
+				"selection": "c",
+				"statement": ""
 			},
 			"22": {
 				"selection": "b",
-				"statement": ""
+				"statement": "Kommt auf den Standurlaub an."
 			},
 			"23": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"24": {
@@ -574,6 +591,10 @@
 				"statement": ""
 			},
 			"25": {
+				"selection": "a",
+				"statement": ""
+			},
+			"26": {
 				"selection": "c",
 				"statement": "Man sollte nicht auf Seiten unterwegs sein, die 2025 noch Sicherheitsfragen zulassen."
 			}
@@ -625,61 +646,65 @@
 			},
 			"11": {
 				"selection": "c",
-				"statement": "Fußball interessiert mich nicht, aber die Sache ist klar."
+				"statement": "Als Kritik an der Präzision der These: Nun ja nach dem Toilettengang ist vor dem Toilettengang; Auslegungssache; wenn ich von draußen komme immer."
 			},
 			"12": {
 				"selection": "c",
-				"statement": "Das denkt man nur bis man selber Lehrer oder mit einem liiert ist!"
+				"statement": "Fußball interessiert mich nicht, aber die Sache ist klar."
 			},
 			"13": {
-				"selection": "b",
-				"statement": ""
+				"selection": "c",
+				"statement": "Das denkt man nur bis man selber Lehrer oder mit einem liiert ist!"
 			},
 			"14": {
 				"selection": "b",
-				"statement": "Realistischer Optimismus oder optimistischer Realismus ist mein Stichwort."
+				"statement": ""
 			},
 			"15": {
 				"selection": "b",
-				"statement": "Hängt von meiner Lebenssituation ab."
+				"statement": "Realistischer Optimismus oder optimistischer Realismus ist mein Stichwort."
 			},
 			"16": {
 				"selection": "b",
-				"statement": "Ich kenne solche und solche, aber generell ist meine Stichprobe sehr klein."
+				"statement": "Hängt von meiner Lebenssituation ab."
 			},
 			"17": {
-				"selection": "c",
-				"statement": ""
+				"selection": "b",
+				"statement": "Ich kenne solche und solche, aber generell ist meine Stichprobe sehr klein."
 			},
 			"18": {
 				"selection": "c",
-				"statement": "Mal ein bisschen schneller fahren macht schon Spaß."
-			},
-			"19": {
-				"selection": "b",
 				"statement": ""
 			},
+			"19": {
+				"selection": "c",
+				"statement": "Mal ein bisschen schneller fahren macht schon Spaß."
+			},
 			"20": {
-				"selection": "a",
+				"selection": "b",
 				"statement": ""
 			},
 			"21": {
-				"selection": "b",
-				"statement": "Beides ziemlich toll und definitiv über einen Städtetrip präferiert."
+				"selection": "a",
+				"statement": ""
 			},
 			"22": {
 				"selection": "b",
-				"statement": "Ist schon nett, aber keine unerlässliche Bereicherung."
+				"statement": "Beides ziemlich toll und definitiv über einen Städtetrip präferiert."
 			},
 			"23": {
+				"selection": "b",
+				"statement": "Ist schon nett, aber keine unerlässliche Bereicherung."
+			},
+			"24": {
 				"selection": "c",
 				"statement": ""
 			},
-			"24": {
+			"25": {
 				"selection": "a",
 				"statement": "Allein schon wie lange ich dafür brauche dir alle diese Thesen zu beantworten."
 			},
-			"25": {
+			"26": {
 				"selection": "c",
 				"statement": ""
 			}
